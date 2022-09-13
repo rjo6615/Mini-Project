@@ -9,13 +9,12 @@
     position: relative;
     font-family: "Goudy Bookletter 1911", sans-serif;
     font-size: 20px;
-    background-color: #FDF8F5;
-    color: #4F4846;
+    color: white;
   }
   
   h1,
   h2 {
-    margin: 20px;
+    margin-top: 10px;
   }
   
   main {
@@ -30,7 +29,7 @@
   
   a {
     text-decoration: none;
-    color: #FDF8F5;
+    color: white;
   }
   
   header,
@@ -38,24 +37,25 @@
     height: 60px;
     width: 100%;
     line-height: 60px;
-    background-color: #266150;
+    background-color: rgb(74, 74, 231);
   }
   
   header {
     position: fixed;
-    border-bottom: 10px solid #DDAF94;
+    border-bottom: 10px solid darkblue;
   }
   
   footer {
     position: absolute;
     margin-top: 0;
     bottom: 0;
-    border-bottom: 10px solid #4F4846;
-    color: #FDF8F5;    
+    border-bottom: 10px solid darkblue;
+    color: white;    
   }
-  
-  figure {
-    margin-bottom: 40px;
+  .background{
+    background-image: url("images/image-3.jpg");
+    background-size: cover;
+    height: 600px;
   }
   
   img {
@@ -66,8 +66,9 @@
   section {
     margin-bottom: 0;
     padding: 20px 10px 40px 10px;
-    border-top: 3px solid #DDAF94;
-    background-color:  #E8CEBF;
+    border-top: 3px solid grey;
+    background-color:  lightblue;
+    color: black;
   }
   
   form {
@@ -75,7 +76,7 @@
     margin: 0 auto;
     width: 500px;
     padding: 10px;
-    border: 5px solid #DDAF94;
+    border: 5px solid darkblue;
     border-radius: 20px;
   }
   
@@ -102,13 +103,33 @@
     background-color: #4F4846;
     color: #FDF8F5;
   }
+  button:hover{
+    background-color: white;
+    color: black;
+  }
    
   /* Class Selectors */
   .text-center {
     text-align: center;
   }
-  
-  .text-right {
-    text-align: right;
+  .submit-button {
+    text-align: center;
+    margin-top: 5px;
   }
-  
+  .nav {
+    text-align: left;
+  }
+
+  .nav a:hover {
+    background: rgb(211, 242, 252);
+    color: #000;
+
+  }
+  a:link, a:visited {
+    background-color: transparent;
+    color: white;
+    padding: 0px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
